@@ -1,0 +1,10 @@
+1.LOC (Lines of Code) računanje:
+Broj linija: 188, kada se oduzmu prazne linije 134 efektivnih linija koda.
+2.Zapazanje:( neformalni pregled koda, staticka analiza)
+- prekomlikovana i ponavljajuca logika;
+- imenovanje metoda (ToString vs. toString());
+3. Koristenjem lint alata SonarQube pronadjeni su sljedaci propusti (Code Smell):
+- Metoda ToString nije dobar naziv za metodu (linija 18);
+- Metoda imenovana velikim slovom Calculate(linija 74), preporuceno je koristiti iowerCamelCase u Javi (calculate);
+- Mnogo ponovljanja za svaku operaciju (+,-,*,/) ( linija 86-153);
+- Ukloniti suvisni return (linija 183)
